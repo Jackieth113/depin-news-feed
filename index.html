@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Full Width Widgets</title>
+    <title>Non-Scrollable Widgets Page</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -10,6 +10,7 @@
             margin: 0;
             padding: 20px; /* Padding for some spacing */
             box-sizing: border-box;
+            overflow: hidden; /* Disables scrolling */
         }
         .widget {
             width: 100%; /* Set widget width to 100% of the container */
@@ -17,17 +18,18 @@
         }
         iframe {
             width: 100%; /* Stretch iframe to full width of its container */
+            height: auto; /* Adjust height automatically */
             border: none; /* Removing the border for cleaner look */
         }
     </style>
 </head>
 <body>
     <div class="widget">
-        <iframe height="60" src="https://rss.app/embed/v1/ticker/tXmrtTI8yiPc51BJ" frameborder="0"></iframe>
+        <iframe src="https://rss.app/embed/v1/ticker/tXmrtTI8yiPc51BJ" frameborder="0"></iframe>
     </div>
 
     <div class="widget">
-        <iframe height="1600" src="https://rss.app/embed/v1/magazine/tXmrtTI8yiPc51BJ" frameborder="0"></iframe>
+        <iframe src="https://rss.app/embed/v1/magazine/tXmrtTI8yiPc51BJ" frameborder="0"></iframe>
     </div>
 </body>
 </html>
