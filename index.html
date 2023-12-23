@@ -1,35 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Non-Scrollable Widgets Page</title>
+    <title>Widgets Page</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
             color: #FFFFFF; /* White text color */
-            background-color: #251863; /* Dark blue background */
-            margin: 0;
-            padding: 20px; /* Padding for some spacing */
-            box-sizing: border-box;
-            overflow: hidden; /* Disables scrolling */
-        }
-        .widget {
-            width: 100%; /* Set widget width to 100% of the container */
-            margin-bottom: 20px; /* Space between widgets */
-        }
-        iframe {
-            width: 100%; /* Stretch iframe to full width of its container */
-            height: auto; /* Adjust height automatically */
-            border: none; /* Removing the border for cleaner look */
+            background-color: #251863; /* Dark blue background color */
+            overflow: hidden; /* Disables scrolling on the page */
+            margin: 0; /* Removes default margin */
+            padding: 0; /* Removes default padding */
+            height: 100vh; /* Full viewport height */
         }
     </style>
 </head>
 <body>
-    <div class="widget">
-        <iframe src="https://rss.app/embed/v1/ticker/tXmrtTI8yiPc51BJ" frameborder="0"></iframe>
-    </div>
 
-    <div class="widget">
-        <iframe src="https://rss.app/embed/v1/magazine/tXmrtTI8yiPc51BJ" frameborder="0"></iframe>
-    </div>
+    <!-- Widget 1: RSS Ticker -->
+    <rssapp-ticker id="tXmrtTI8yiPc51BJ"></rssapp-ticker>
+    <script src="https://widget.rss.app/v1/ticker.js" type="text/javascript" async></script>
+
+    <!-- Widget 2: RSS Magazine -->
+    <rssapp-magazine id="tXmrtTI8yiPc51BJ"></rssapp-magazine>
+    <script src="https://widget.rss.app/v1/magazine.js" type="text/javascript" async></script>
+
 </body>
 </html>
