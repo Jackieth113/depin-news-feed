@@ -1,30 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Widgets Page</title>
+    <title>RSS App Widgets</title>
     <style>
         body {
             color: #FFFFFF; /* White text color */
             background-color: #251863; /* Dark blue background color */
-            font-family: Arial, sans-serif; /* Optional: Arial font for the body */
-            overflow-y: auto; /* Enable vertical scrolling */
-            margin: 0; /* Remove default margin */
-            padding: 20px; /* Add some padding for content */
+            font-family: Arial, sans-serif;
+            overflow-y: scroll; /* Enable vertical scrolling */
+            margin: 0;
+            padding: 0;
+        }
+        .widget-container {
+            margin: 20px;
         }
     </style>
 </head>
 <body>
 
-    <!-- Widget 1: RSSApp Ticker -->
-    <rssapp-ticker id="tXmrtTI8yiPc51BJ"></rssapp-ticker>
-    <script src="https://widget.rss.app/v1/ticker.js" type="text/javascript" async></script>
+    <div class="widget-container">
+        <!-- Widget 1: RSS Ticker -->
+        <rssapp-ticker id="tXmrtTI8yiPc51BJ"></rssapp-ticker>
+        <script src="https://widget.rss.app/v1/ticker.js" type="text/javascript" async></script>
+    </div>
 
-    <!-- Spacing between widgets -->
-    <div style="height: 20px;"></div> 
-
-    <!-- Widget 2: RSSApp Magazine -->
-    <rssapp-magazine id="tXmrtTI8yiPc51BJ"></rssapp-magazine>
-    <script src="https://widget.rss.app/v1/magazine.js" type="text/javascript" async></script>
+    <div class="widget-container">
+        <!-- Widget 2: RSS Wall -->
+        <rssapp-wall id="tXmrtTI8yiPc51BJ"></rssapp-wall>
+        <script src="https://widget.rss.app/v1/wall.js" type="text/javascript" async></script>
+    </div>
 
 </body>
 </html>
