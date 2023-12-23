@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Widgets Page</title>
+    <title>Full Width Widgets</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -12,17 +12,22 @@
             box-sizing: border-box;
         }
         .widget {
+            width: 100%; /* Set widget width to 100% of the container */
             margin-bottom: 20px; /* Space between widgets */
+        }
+        iframe {
+            width: 100%; /* Stretch iframe to full width of its container */
+            border: none; /* Removing the border for cleaner look */
         }
     </style>
 </head>
 <body>
     <div class="widget">
-        <iframe width="1200" height="60" src="https://rss.app/embed/v1/ticker/tXmrtTI8yiPc51BJ" frameborder="0"></iframe>
+        <iframe height="60" src="https://rss.app/embed/v1/ticker/tXmrtTI8yiPc51BJ" frameborder="0"></iframe>
     </div>
 
     <div class="widget">
-        <iframe width="900" height="1600" src="https://rss.app/embed/v1/magazine/tXmrtTI8yiPc51BJ" frameborder="0"></iframe>
+        <iframe height="1600" src="https://rss.app/embed/v1/magazine/tXmrtTI8yiPc51BJ" frameborder="0"></iframe>
     </div>
 </body>
 </html>
