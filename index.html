@@ -3,32 +3,26 @@
 <head>
     <title>Widgets Page</title>
     <style>
-        .headline {
-            font-family: Arial, sans-serif;
-            font-size: 16px;
-            color: #FFFFFF;
-            margin-bottom: 10px; /* Space between headline and widget */
-        }
-        .widget-container {
-            margin-bottom: 20px; /* Space between widgets */
-        }
         body {
-            background-color: #000000; /* Assuming a dark background to contrast with white text */
-            padding: 20px; /* Padding around the content */
+            font-family: Arial, sans-serif;
+            color: #FFFFFF; /* White text color */
+            background-color: #251863; /* Dark blue background */
+            margin: 0;
+            padding: 20px; /* Padding for some spacing */
+            box-sizing: border-box;
+        }
+        .widget {
+            margin-bottom: 20px; /* Space between widgets */
         }
     </style>
 </head>
 <body>
-
-    <div class="headline">Headline for Widget 1</div>
-    <div class="widget-container">
+    <div class="widget">
         <iframe width="1200" height="60" src="https://rss.app/embed/v1/ticker/tXmrtTI8yiPc51BJ" frameborder="0"></iframe>
     </div>
 
-    <div class="headline">Headline for Widget 2</div>
-    <div class="widget-container">
-        <iframe width="850" height="1600" src="https://rss.app/embed/v1/list/tXmrtTI8yiPc51BJ" frameborder="0"></iframe>
+    <div class="widget">
+        <iframe width="900" height="1600" src="https://rss.app/embed/v1/magazine/tXmrtTI8yiPc51BJ" frameborder="0"></iframe>
     </div>
-
 </body>
 </html>
